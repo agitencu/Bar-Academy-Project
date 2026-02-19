@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekibimiz | Mabolla Bar Academy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">MABOLLA BAR ACADEMY</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link active px-lg-3" href="ekip.html">Ekibimiz</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="team-header py-5 mb-5 shadow-sm">
+        <div class="container text-center py-4">
+            <img src="img/logo.jpg" 
+                        alt="Mabolla Logo" 
+                        width="120" 
+                        height="120" 
+                        class="d-block mx-auto mb-4 rounded-circle shadow-lg border border-light border-opacity-25">
+            <h1 class="display-3 fw-bold mb-3 text-gold" style="color: white;">Eğitmen Kadromuz</h1>
+            <p class="lead fs-4 opacity-75" style="color: white;">Mabolla'nın arkasındaki uzman ekip.</p>
+        </div>
+    </header>
+
+    <section class="team-section flex-grow-1 py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center">
+                
+                <div class="col">
+                    <div class="team-card h-100 border-0 shadow rounded-4 bg-white overflow-hidden transition" style="border-top: 8px solid red !important;">
+                        <div class="team-img-container shadow-sm">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Caner Mabolla">
+                        </div>
+                        <div class="team-content p-4 text-center">
+                            <span class="team-role d-block mb-2 fw-bold text-uppercase small tracking-widest text-gold">Kurucu & Baş Eğitmen</span>
+                            <h3 class="team-name fw-bold mb-3 h4">Caner Mabolla</h3>
+                            <p class="team-description text-muted small px-2 lead">15 yıllık bar yöneticiliği ve miksoloji uzmanlığı.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="team-card h-100 border-0 shadow rounded-4 bg-white overflow-hidden transition">
+                        <div class="team-img-container shadow-sm">
+                            <img src="https://images.pexels.com/photos/4344441/pexels-photo-4344441.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Deniz Aksoy">
+                        </div>
+                        <div class="team-content p-4 text-center">
+                            <span class="team-role d-block mb-2 fw-bold text-uppercase small tracking-widest text-gold">Yardımcı Eğitmen</span>
+                            <h3 class="team-name fw-bold mb-3 h4">Deniz Aksoy</h3>
+                            <p class="team-description text-muted small px-2 lead">Sunum teknikleri ve yaratıcı kokteyl reçeteleri uzmanı.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="team-card h-100 border-0 shadow rounded-4 bg-white overflow-hidden transition">
+                        <div class="team-img-container shadow-sm">
+                            <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Mert Yılmaz">
+                        </div>
+                        <div class="team-content p-4 text-center">
+                            <span class="team-role d-block mb-2 fw-bold text-uppercase small tracking-widest text-gold">Yardımcı Eğitmen</span>
+                            <h3 class="team-name fw-bold mb-3 h4">Mert Yılmaz</h3>
+                            <p class="team-description text-muted small px-2 lead">Ekip yönetimi ve operasyonel bar eğitimi lideri.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5 bg-dark text-white border-top-gold">
+        <div class="container">
+            <p class="mb-2 opacity-75">&copy; 2026 <span class="fw-bold">Mabolla Bar Academy</span>. Tüm Hakları Saklıdır.</p>
+            <p class="mb-0">Designed by <a href="http://www.agitencu.com.tr" class="text-gold text-decoration-none"target="_blank">Agit Encu</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

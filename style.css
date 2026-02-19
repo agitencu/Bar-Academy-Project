@@ -1,0 +1,489 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Renk Paleti */
+:root {
+    --gold: red ;
+    --dark: #1a1a1a;
+    --light: #ffffff;
+    --gray: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--light) !important;
+}
+
+.nav-link {
+    color: var(--light) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* Anasayfa - Hero Bölümü */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.hero-lead {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Hero Buton Özel Stili */
+.btn-hero-custom {
+    border: 2px solid red !important; 
+    color: white !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-hero-custom:hover {
+    background-color: white !important; 
+    color: black !important; 
+    border-color: white !important; 
+}
+.backdrop-blur {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 30px 0;
+    border-top: 3px solid var(--gold);
+}
+
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hakkımızda */
+
+.about-header {
+    background-color: var(--dark);
+    color: var(--gold);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--gold);
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-card h3 {
+    color: var(--dark);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-card p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.section-title-gold {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Ekip */
+
+.team-header {
+    background-color: var(--dark);
+    color: var(--gold);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+.team-section {
+    padding: 60px 0;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 125%; 
+    background-color: #f0f0f0;
+}
+
+.team-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-role {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin: 8px 0;
+    color: var(--dark);
+}
+
+.team-description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* galeri */
+.gallery-header {
+    background-color: var(--dark);
+    color: var(--gold);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+.gallery-section {
+    padding: 60px 0;
+    /* background: white; */
+}
+
+/* Mekan Görseli */
+.venue-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+}
+
+/* Kokteyl Kartları */
+.cocktail-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.cocktail-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cocktail-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.85);
+    color: white;
+    padding: 20px;
+    transition: bottom 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cocktail-card:hover .cocktail-overlay {
+    bottom: 0;
+}
+
+.cocktail-card:hover .cocktail-img {
+    transform: scale(1.1);
+}
+
+.cocktail-overlay h4 {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+}
+
+.cocktail-overlay p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+ /* Tam Arka Plan Beyaz Ayarı */
+        body {
+            background-color: #ffffff !important;
+            color: #1a1a1a !important;
+        }
+
+        /* Başlıkların Siyah Olması */
+        .gallery-title-dark {
+            color: #1a1a1a !important;
+            border-color: #1a1a1a !important;
+        }
+
+        /* Mobil Ayarları: Yazıları alta al ve siyah yap */
+        @media (max-width: 767.98px) {
+            .cocktail-card {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #f0f0f0;
+                background-color: #ffffff;
+            }
+            .cocktail-overlay {
+                position: relative !important;
+                bottom: 0 !important;
+                background-color: #ffffff !important;
+                opacity: 1 !important;
+                padding: 15px !important;
+                text-align: center;
+            }
+            .cocktail-overlay h4, .cocktail-overlay p {
+                color: #1a1a1a !important; /* Mobilde alt yazı siyah */
+            }
+            .cocktail-img {
+                height: 250px !important;
+            }
+        }
+
+        /* Masaüstü: Resmin üstündeki overlay alanı siyah kalsın ki beyaz yazılar okunsun */
+        @media (min-width: 768px) {
+            .cocktail-overlay {
+                background: rgba(0, 0, 0, 0.8) !important;
+            }
+        }
+
+/* İletişim */
+
+.contact-header {
+    background-color: var(--dark);
+    color: var(--gold);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-info-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-right: 20px;
+    width: 30px;
+}
+
+.info-text h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.social-links-contact a {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.social-links-contact a:hover {
+    color: var(--gold);
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+/* Form Tasarımı */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #b8952d;
+    color: white;
+}
+
+/* --- RESPONSIVE --- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main, section, header {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    margin-top: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .venue-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: auto;
+        min-height: calc(100vh - 56px); 
+        padding: 100px 0;
+        background-attachment: scroll; 
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .cocktail-overlay {
+        position: relative;
+        bottom: 0;
+        background: #111;
+        padding: 15px;
+    }
+
+    html, body {
+        background-color: var(--dark); 
+    }
+
+    .contact-info-box, .contact-form {
+        padding: 20px;
+    }
+
+    .about-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .team-img-container {
+        padding-top: 100%; 
+    }
+}
+
