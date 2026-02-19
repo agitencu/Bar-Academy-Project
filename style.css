@@ -42,15 +42,19 @@ h1, h2, h3, .navbar-brand {
 
 /* Anasayfa - Hero Bölümü */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1350&q=80');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    background-attachment: fixed;
+    /* Sabit yükseklik yerine minimum yükseklik veriyoruz */
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    padding: 100px 0; /* İçeriklerin birbirine girmemesi için dikey boşluk */
 }
 
 .hero-title {
@@ -487,3 +491,16 @@ footer {
     }
 }
 
+/* Mobilde logo ve başlık boyutlarını küçültelim */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important; /* Mobilde başlık çok büyük kalmasın */
+    }
+    .hero-lead {
+        font-size: 1.1rem !important;
+    }
+    header img {
+        width: 120px !important; /* Mobilde logo biraz küçülsün */
+        height: 120px !important;
+    }
+}
